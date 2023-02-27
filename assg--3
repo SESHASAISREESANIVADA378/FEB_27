@@ -1,0 +1,35 @@
+/*Write a c program to print sum of digits of a given number until sum is a single digit.
+Use nested while loop. For eg. Input : 456, output : 6 (not 15, because again u need to sum of 1+5 also)
+Assignment3:
+If variable i is declared as char and i is initialized to 65, then if u print i value, u will get A (alphabet letter). For eg.
+char i=65;
+printf(“%d”,i);  output would be : A
+now basing on the above concept, u are required to write a c program to print the following output. 
+A
+A B C
+A B C D
+A B C D E
+A B C D E F 
+A B C D E F G
+…..
+…..
+A B C D E F G H I J K L M N O P Q R S T U V W X
+A B C D E F G H I J K L M N O P Q R S T U V W X Y
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*/
+
+
+
+#include<stdio.h>
+int main()
+{
+	char i,j;
+	for(i=65;i<=90;i++)
+	{
+		for(j=65;j<=i;j++)
+		{
+			printf("%c ",j);
+		}
+		printf("\n");
+	}
+    
+}
